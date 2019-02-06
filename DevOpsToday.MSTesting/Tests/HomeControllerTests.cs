@@ -5,17 +5,17 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DevOpsToday.MSTesting.Tests
 {
   [TestClass]
-  public class HomeControllerTests
+  public static class HomeControllerTests
   {
     [TestMethod]
-    public void Test_IndexAction()
+    public static void Test_IndexAction()
     {
       var sut = new HomeController();
 
       Assert.IsNotNull(sut.Index());
     }
     [TestMethod]
-    public void Test_PrivacyAction()
+    public static void Test_PrivacyAction()
     {
       var sut = new HomeController();
 
